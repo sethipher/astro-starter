@@ -22,222 +22,489 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
   <Banner title="Contact Us" image={optimizedImage} />
 
   <!-- ============================================ -->
-  <!--                Contact Info                  -->
+  <!--                   Contact                    -->
   <!-- ============================================ -->
 
-  <section id="contact-info" class="contact-info-section">
+  <section id="contact-1441">
     <div class="container">
-      <div class="info-grid">
-        <div class="info-card">
-          <div class="info-icon">
-            <Icon name="mdi:phone" size={25} aria-hidden="true" />
-          </div>
-          <h3>Phone</h3>
-          <p>Call us directly</p>
-          <a href={`tel:${client.phoneForTel}`} class="contact-link">
-            {client.phoneFormatted}
-          </a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <Icon name="mdi:email" size={25} aria-hidden="true" />
-          </div>
-          <h3>Email</h3>
-          <p>Send us a message</p>
-          <a href={`mailto:${client.email}`} class="contact-link">
-            {client.email}
-          </a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <Icon name="mdi:map-marker" size={30} aria-hidden="true" />
-          </div>
-          <h3>Address</h3>
-          <p>Visit our office</p>
-          <a
-            href={client.address.mapLink}
-            target="_blank"
-            rel="noopener"
-            class="contact-link"
-          >
-            {client.address.lineOne}
-            <br />
-            {client.address.lineTwo && `${client.address.lineTwo}`}
-            {client.address.city}, {client.address.state}
-            {client.address.zip}
-          </a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <Icon name="mdi:clock-time-four" size={25} aria-hidden="true" />
-          </div>
-          <h3>Business Hours</h3>
-          <p>When we're available</p>
-          <div class="hours-list">
-            <div class="hours-item">
-              <span>Mon-Fri:</span>
-              <span>{client.hours.monday}</span>
-            </div>
-            <div class="hours-item">
-              <span>Saturday:</span>
-              <span>{client.hours.saturday}</span>
-            </div>
-            <div class="hours-item">
-              <span>Sunday:</span>
-              <span>{client.hours.sunday}</span>
-            </div>
-          </div>
-        </div>
+      <div class="content">
+        <span class="topper">Contact Us</span>
+        <h2 class="title">We Love to Hear From Our Happy Customers</h2>
       </div>
+      <div class="contact-group">
+        <p class="text">
+          There are many variations of passages of available but the majority
+          have suffered alteration in some form, by injected randomized words
+          even slightly believable.
+        </p>
+        <ul class="ul">
+          <li class="li">
+            <picture class="icon-wrapper">
+              <img
+                aria-hidden="true"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-yellow.svg"
+                alt="phone icon"
+                class="icon"
+                width="40"
+                height="40"
+                decoding="async"
+              />
+            </picture>
+            <div class="flex-group">
+              <span class="header">Phone</span>
+              <a href={`tel:${client.phoneForTel}`} class="link">
+                {client.phoneFormatted}
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <picture class="icon-wrapper">
+              <img
+                aria-hidden="true"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-yellow.svg"
+                alt="address icon"
+                class="icon"
+                width="40"
+                height="40"
+                decoding="async"
+              />
+            </picture>
+            <div class="flex-group">
+              <span class="header">Address</span>
+              <a href={`mailto:${client.email}`} class="link">
+                {client.address.lineOne}, {
+                  client.address.lineTwo && `${client.address.lineTwo}`
+                }, {client.address.city}, {client.address.state}
+                {client.address.zip}
+              </a>
+            </div>
+          </li>
+        </ul>
+        <picture class="background">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg"
+            alt="wind turbine"
+            width="650"
+            height="613"
+          />
+        </picture>
+      </div>
+      <!--Form-->
+      <form class="form" id="form-1441" name="Contact Form" method="post">
+        <label class="label">
+          Name
+          <input
+            class="input"
+            required
+            type="text"
+            id="name-1441"
+            name="name"
+            placeholder="Name"
+          />
+        </label>
+        <label class="label email">
+          Email
+          <input
+            class="input"
+            required
+            type="email"
+            id="email-1441"
+            name="email"
+            placeholder="Email"
+          />
+        </label>
+        <label class="label phone">
+          Phone
+          <input
+            class="input"
+            required
+            type="number"
+            id="phone-1441"
+            name="phone"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="label">
+          Message
+          <textarea
+            class="input textarea"
+            required
+            name="Message"
+            id="message-1441"
+            placeholder="Write message..."></textarea>
+        </label>
+        <button class="button-solid submit" type="submit">Send Message</button>
+      </form>
     </div>
   </section>
-
-  <ContactForm />
 
   <CTA />
 </BaseLayout>
 
 <style lang="less">
-  /* Contact Info Section */
-  @media only screen and (min-width: 0em) {
-    .contact-info-section {
+  /*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #contact-1441 {
       padding: var(--sectionPadding);
-      background: #f8f9fa;
+      background-color: #f7f7f7;
+      position: relative;
+      z-index: 1;
 
       .container {
         width: 100%;
-        max-width: (1280/16rem);
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
         margin: auto;
-      }
-
-      .info-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: (32/16rem);
-      }
-
-      .info-card {
-        background: #fff;
-        padding: (32/16rem);
-        border-radius: (12/16rem);
-        text-align: center;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-
-        &:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        }
-      }
-
-      .info-icon {
-        width: (64/16rem);
-        height: (64/16rem);
-        margin: 0 auto (24/16rem);
-        background: var(--primary);
-        border-radius: 50%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        color: white;
+        align-items: stretch;
+        flex-direction: column;
+        column-gap: auto;
+        /* 48px - 64px */
+        row-gap: clamp(2rem, 3vw, 3rem);
+        column-gap: (20/16rem);
+        position: relative;
       }
 
-      .info-card h3 {
-        font-size: (24/16rem);
-        font-weight: 700;
-        margin-bottom: (8/16rem);
-        color: var(--headerColor);
+      .content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
       }
 
-      .info-card p {
-        margin-bottom: (16/16rem);
-        color: var(--bodyTextColor);
-        opacity: 0.8;
+      .title {
+        max-width: 18ch;
+        margin: 0;
       }
 
-      .contact-link {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s ease;
+      .text {
+        color: #e8e8e8;
+      }
+
+      .contact-group {
+        width: 100%;
+        max-width: (650/16rem);
+        min-height: (500/16rem);
+        /* 24px - 32px */
+        padding: clamp(1.5rem, 2.5vw, 2rem);
+        padding-top: (150/16rem);
+        /* prevents padding from affecting height and width */
+        box-sizing: border-box;
+        border-radius: (24/16rem);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: (32/16rem);
+        /* sends it to the bottom in the 3rd position */
+        order: 3;
+        position: relative;
+        z-index: 1;
+      }
+
+      .ul {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: (24/16rem);
+        position: relative;
+      }
+
+      .li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: (20/16rem);
 
         &:hover {
-          color: var(--primaryLight);
+          .icon-wrapper {
+            transform: scale(1.1);
+          }
         }
       }
 
-      .hours-list {
-        text-align: left;
-        max-width: (200/16rem);
-        margin: 0 auto;
+      .header {
+        font-size: (20/16rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: (12/16rem);
+        color: var(--bodyTextColorWhite);
+        display: block;
       }
 
-      .hours-item {
+      .link {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+        display: block;
+        position: relative;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .icon-wrapper {
+        width: (60/16rem);
+        height: (60/16rem);
+        margin: 0;
+        border-radius: 50%;
+        border: 1px solid var(--secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+      }
+
+      .icon {
+        width: (24/16rem);
+        height: auto;
+        display: block;
+      }
+
+      .background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        &:before {
+          /* background color overlay */
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(
+            0deg,
+            rgba(26, 26, 26, 0.94) 33.99%,
+            rgba(26, 26, 26, 0) 79.31%
+          );
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          /* Makes img tag act as a background image */
+          object-fit: cover;
+        }
+      }
+
+      .form {
+        width: 100%;
+        max-width: (630/16rem);
+        /* 24px - 48px top and bottom */
+        /* 16px - 48px left and right */
+        padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+        /* prevents flexbox from affecting height and width */
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: (24/16rem);
         display: flex;
         justify-content: space-between;
-        margin-bottom: (8/16rem);
-        font-size: (14/16rem);
+        flex-wrap: wrap;
+        align-items: center;
+        gap: (12/16rem);
+      }
 
-        span:first-child {
-          font-weight: 600;
-          color: var(--headerColor);
+      .label {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        width: 100%;
+        color: var(--headerColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: (4/16rem);
+      }
+
+      .input {
+        font-size: (16/16rem);
+        width: 100%;
+        height: (56/16rem);
+        padding: 0;
+        padding-left: (24/16rem);
+        color: var(--headerColor);
+        background-color: #f7f7f7;
+        border-radius: (8/16rem);
+        border: none;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        &::placeholder {
+          color: #7d799c;
+          opacity: 0.6;
+        }
+      }
+
+      .textarea {
+        min-height: (120/16rem);
+        padding-top: (24/16rem);
+        margin-bottom: (12/16rem);
+        font-family: inherit;
+      }
+
+      .button-solid {
+        font-size: (16/16rem);
+        line-height: (56/16rem);
+        text-decoration: none;
+        font-weight: 700;
+        overflow: hidden;
+        margin: 0;
+        color: #fff;
+        padding: 0 (48/16rem);
+        border-radius: (8/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 0%;
+          background: #1a1a1a;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
         }
 
-        span:last-child {
-          color: var(--bodyTextColor);
+        &:hover {
+          color: var(--primary);
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .submit {
+        width: 100%;
+        min-width: (200/16rem);
+        border: none;
+
+        &:hover {
+          color: #fff;
+          cursor: pointer;
         }
       }
     }
   }
 
   /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    .contact-info-section {
-      .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: (40/16rem);
+  @media only screen and (min-width: 48rem) {
+    #contact-1441 {
+      .container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
-    }
-  }
 
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    .contact-info-section {
-      .info-grid {
-        grid-template-columns: repeat(4, 1fr);
+      .content {
+        width: 100%;
+        /* prevents flexbox from squishing it */
+        flex: none;
+      }
+
+      .contact-group {
+        width: 50vw;
+        order: 2;
+      }
+
+      .form {
+        width: 45%;
+        max-width: (542/16rem);
+        order: 3;
+      }
+
+      .submit {
+        width: auto;
       }
     }
   }
 
   /* Dark Mode */
-  body.dark-mode {
-    .contact-info-section {
-      background: var(--dark);
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #contact-1441 {
+        background-color: rgba(0, 0, 0, 0.2);
+        .title,
+        .text,
+        .link,
+        .label {
+          color: var(--bodyTextColorWhite);
+        }
 
-      .info-card {
-        background: var(--medium);
-      }
+        .contact-text,
+        .link {
+          opacity: 0.8;
+        }
 
-      .info-card h3 {
-        color: var(--bodyTextColorWhite);
-      }
+        .icon-wrapper {
+          border-color: #fff;
+        }
 
-      .info-card p {
-        color: var(--bodyTextColorWhite);
-      }
+        .icon {
+          /* makes it white */
+          filter: grayscale(1) brightness(1000%);
+        }
 
-      .hours-item span:first-child {
-        color: var(--bodyTextColorWhite);
-      }
+        .form {
+          background-color: var(--medium);
+        }
 
-      .hours-item span:last-child {
-        color: var(--bodyTextColorWhite);
-        opacity: 0.8;
+        .input {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: #fff;
+          &::placeholder {
+            color: #fff;
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
