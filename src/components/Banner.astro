@@ -1,5 +1,5 @@
 ---
-import Breadcrumb from "./Breadcrumb.astro";
+import Breadcrumb from "./ui/Breadcrumb.astro";
 import { Picture } from "astro:assets";
 const { title, image, links } = Astro.props;
 
@@ -18,7 +18,7 @@ const currentPath = Astro.url.pathname
 const defaultLinks = [{ href: "/", text: "Home" }, { text: currentPath }];
 
 // Ensure "Home" is always present. If the caller passes links, prepend Home when missing.
-function ensureHome(linksArr) {
+function ensureHome(linksArr: any[]) {
   if (!Array.isArray(linksArr)) return defaultLinks;
   const hasHome = linksArr.some(
     (l) => l && (l.href === "/" || String(l.text).toLowerCase() === "home")
