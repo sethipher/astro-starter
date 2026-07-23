@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # kiro
 .kiro/
+
+# ruvector
+ruvector.db

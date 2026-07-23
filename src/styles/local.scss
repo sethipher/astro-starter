@@ -11,26 +11,26 @@
 
     .container {
       width: 100%;
-      max-width: (1280/16rem);
+      max-width: calc(1280 / 16 * 1rem);
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      row-gap: (40/16rem);
+      row-gap: calc(40 / 16 * 1rem);
     }
 
     .left {
       /* scaling the font size with the view width */
-      font-size: ~"min(2.31vw, .7em)";
+      font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
-      width: (631/16em);
-      height: (636/16em);
+      width: calc(631 / 16 * 1em);
+      height: calc(636 / 16 * 1em);
       position: relative;
     }
 
     .picture {
-      border-radius: (24/16em);
+      border-radius: calc(24 / 16 * 1em);
       display: block;
       position: absolute;
       /* clips img tag corners */
@@ -47,15 +47,15 @@
     }
 
     .picture1 {
-      width: (522/16em);
-      height: (581/16em);
+      width: calc(522 / 16 * 1em);
+      height: calc(581 / 16 * 1em);
       top: 0;
       left: 0;
     }
 
     .picture2 {
-      width: (414/16em);
-      height: (400/16em);
+      width: calc(414 / 16 * 1em);
+      height: calc(400 / 16 * 1em);
       background-color: #fff;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
       /* 6px - 12px */
@@ -65,27 +65,27 @@
     }
 
     .right {
-      max-width: (542/16rem);
+      max-width: calc(542 / 16 * 1rem);
       margin: auto;
     }
 
     .topper {
       text-align: left;
-      margin-bottom: (4/16rem);
+      margin-bottom: calc(4 / 16 * 1rem);
     }
 
     .title {
       text-align: left;
-      max-width: (800/16rem);
+      max-width: calc(800 / 16 * 1rem);
     }
 
     .text {
       text-align: left;
-      max-width: (750/16rem);
-      margin-bottom: (16/16rem);
+      max-width: calc(750 / 16 * 1rem);
+      margin-bottom: calc(16 / 16 * 1rem);
 
       &:last-of-type {
-        margin-bottom: (32/16rem);
+        margin-bottom: calc(32 / 16 * 1rem);
       }
     }
 
@@ -93,7 +93,7 @@
       /* 16px - 32px */
       padding: clamp(1rem, 3vw, 2rem);
       background-color: #f7f7f7;
-      border-radius: (16/16rem);
+      border-radius: calc(16 / 16 * 1rem);
       position: relative;
     }
 
@@ -101,22 +101,22 @@
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
-      margin: 0 0 (16/16rem);
+      margin: 0 0 calc(16 / 16 * 1rem);
       color: #353535;
     }
 
     .name {
-      font-size: (16/16rem);
+      font-size: calc(16 / 16 * 1rem);
       font-weight: bold;
       line-height: 1.2em;
       text-transform: uppercase;
-      margin: 0 0 (4/16rem);
+      margin: 0 0 calc(4 / 16 * 1rem);
       color: var(--headerColor);
       display: block;
     }
 
     .job {
-      font-size: (14/16rem);
+      font-size: calc(14 / 16 * 1rem);
       line-height: 1.5em;
       color: #353535;
       display: block;
@@ -129,11 +129,11 @@
       position: absolute;
       /* 16px - 32px */
       right: clamp(1rem, 4vw, 2rem);
-      bottom: (0/16rem);
+      bottom: calc(0 / 16 * 1rem);
     }
 
     .button-solid {
-      margin-top: (32/16rem);
+      margin-top: calc(32 / 16 * 1rem);
     }
   }
 }
@@ -144,11 +144,11 @@
     .container {
       flex-flow: row;
       justify-content: space-between;
-      gap: (52/16rem);
+      gap: calc(52 / 16 * 1rem);
     }
 
     .left {
-      font-size: ~"min(1.2vw, 1em)";
+      font-size: min(1.2vw, 1em);
       flex: none;
     }
 
@@ -214,26 +214,26 @@
 
     .container {
       width: 100%;
-      max-width: (1280/16rem);
+      max-width: calc(1280 / 16 * 1rem);
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      row-gap: (40/16rem);
+      row-gap: calc(40 / 16 * 1rem);
     }
 
     .left {
       /* scaling the font size with the view width */
-      font-size: ~"min(2.31vw, .7em)";
+      font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
-      width: (631/16em);
-      height: (636/16em);
+      width: calc(631 / 16 * 1em);
+      height: calc(636 / 16 * 1em);
       position: relative;
     }
 
     .picture {
-      border-radius: (24/16em);
+      border-radius: calc(24 / 16 * 1em);
       display: block;
       position: absolute;
       /* clips img tag corners */
@@ -250,15 +250,15 @@
     }
 
     .picture1 {
-      width: (522/16em);
-      height: (581/16em);
+      width: calc(522 / 16 * 1em);
+      height: calc(581 / 16 * 1em);
       top: 0;
       right: 0;
     }
 
     .picture2 {
-      width: (414/16em);
-      height: (400/16em);
+      width: calc(414 / 16 * 1em);
+      height: calc(400 / 16 * 1em);
       background-color: #fff;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
       /* 6px - 12px */
@@ -268,26 +268,26 @@
     }
 
     .right {
-      max-width: (542/16rem);
+      max-width: calc(542 / 16 * 1rem);
       margin: auto;
     }
 
     .topper {
       text-align: left;
-      margin-bottom: (4/16rem);
+      margin-bottom: calc(4 / 16 * 1rem);
     }
 
     .title {
       text-align: left;
-      max-width: (800/16rem);
+      max-width: calc(800 / 16 * 1rem);
     }
 
     .text {
       text-align: left;
-      max-width: (750/16rem);
-      margin-bottom: (16/16rem);
+      max-width: calc(750 / 16 * 1rem);
+      margin-bottom: calc(16 / 16 * 1rem);
       &:last-of-type {
-        margin-bottom: (32/16rem);
+        margin-bottom: calc(32 / 16 * 1rem);
       }
     }
 
@@ -295,7 +295,7 @@
       /* 16px - 32px */
       padding: clamp(1rem, 3vw, 2rem);
       background-color: #f7f7f7;
-      border-radius: (16/16rem);
+      border-radius: calc(16 / 16 * 1rem);
       position: relative;
     }
 
@@ -303,22 +303,22 @@
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
-      margin: 0 0 (16/16rem);
+      margin: 0 0 calc(16 / 16 * 1rem);
       color: #353535;
     }
 
     .name {
-      font-size: (16/16rem);
+      font-size: calc(16 / 16 * 1rem);
       font-weight: bold;
       line-height: 1.2em;
       text-transform: uppercase;
-      margin: 0 0 (4/16rem);
+      margin: 0 0 calc(4 / 16 * 1rem);
       color: var(--headerColor);
       display: block;
     }
 
     .job {
-      font-size: (14/16rem);
+      font-size: calc(14 / 16 * 1rem);
       line-height: 1.5em;
       color: #353535;
       display: block;
@@ -331,7 +331,7 @@
       position: absolute;
       /* 16px - 32px */
       right: clamp(1rem, 4vw, 2rem);
-      bottom: (0/16rem);
+      bottom: calc(0 / 16 * 1rem);
     }
   }
 }
@@ -342,11 +342,11 @@
     .container {
       flex-flow: row;
       justify-content: space-between;
-      gap: (52/16rem);
+      gap: calc(52 / 16 * 1rem);
     }
 
     .left {
-      font-size: ~"min(1.2vw, 1em)";
+      font-size: min(1.2vw, 1em);
       /* sends it to the right */
       order: 2;
       flex: none;
@@ -418,32 +418,32 @@
     overflow: hidden;
     .container {
       width: 100%;
-      max-width: (1322/16em);
+      max-width: calc(1322 / 16 * 1em);
       margin: auto;
     }
 
     .topper {
       text-align: center;
-      margin-bottom: (16/16rem);
+      margin-bottom: calc(16 / 16 * 1rem);
     }
 
     .title {
       text-align: center;
-      max-width: (621/16rem);
-      margin-bottom: (40/16rem);
+      max-width: calc(621 / 16 * 1rem);
+      margin-bottom: calc(40 / 16 * 1rem);
     }
 
     .image-group {
       /* used rem so it doesn't scale with the font size of on parent */
-      font-size: ~"min(1.1vw, 1em)";
+      font-size: min(1.1vw, 1em);
       width: 100%;
-      max-width: (1322/16em);
-      margin: 0 auto (60/16rem);
+      max-width: calc(1322 / 16 * 1em);
+      margin: 0 auto calc(60 / 16 * 1rem);
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      gap: (30/16em);
+      gap: calc(30 / 16 * 1em);
     }
 
     .row {
@@ -451,7 +451,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      gap: (30/16em);
+      gap: calc(30 / 16 * 1em);
     }
 
     .picture {
@@ -469,52 +469,52 @@
 
     .row-1 {
       .picture1 {
-        width: (420/16em);
-        height: (567/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(567 / 16 * 1em);
       }
 
       .picture2 {
-        width: (420/16em);
-        height: (629/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(629 / 16 * 1em);
       }
 
       .picture3 {
-        width: (420/16em);
-        height: (512/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(512 / 16 * 1em);
       }
     }
 
     .row-2 {
       .picture1 {
-        width: (420/16em);
-        height: (492/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(492 / 16 * 1em);
       }
 
       .picture2 {
-        width: (420/16em);
-        height: (517/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(517 / 16 * 1em);
       }
 
       .picture3 {
-        width: (420/16em);
-        height: (629/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(629 / 16 * 1em);
       }
     }
 
     .row-3 {
       .picture1 {
-        width: (420/16em);
-        height: (625/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(625 / 16 * 1em);
       }
 
       .picture2 {
-        width: (420/16em);
-        height: (452/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(452 / 16 * 1em);
       }
 
       .picture3 {
-        width: (420/16em);
-        height: (629/16em);
+        width: calc(420 / 16 * 1em);
+        height: calc(629 / 16 * 1em);
       }
     }
   }
@@ -544,23 +544,23 @@
 
     .container {
       width: 100%;
-      max-width: (1104/16rem);
+      max-width: calc(1104 / 16 * 1rem);
       margin: auto;
     }
 
     .topper {
       text-align: center;
-      margin-bottom: (16/16rem);
+      margin-bottom: calc(16 / 16 * 1rem);
     }
 
     .title {
       text-align: center;
-      max-width: (700/16rem);
+      max-width: calc(700 / 16 * 1rem);
     }
 
     .text {
       text-align: center;
-      max-width: (650/16rem);
+      max-width: calc(650 / 16 * 1rem);
       /* 88px - 104px */
       margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
     }
@@ -575,17 +575,17 @@
       text-align: left;
       list-style: none;
       width: 100%;
-      max-width: (542/16rem);
-      margin: 0 auto (64/16rem);
+      max-width: calc(542 / 16 * 1rem);
+      margin: 0 auto calc(64 / 16 * 1rem);
       /* Prevents padding from affecting height & width */
       box-sizing: border-box;
       /* Padding L & R - 16px - 32px */
-      padding: (60/16rem) clamp(1rem, 3.2vw, 2rem) 0;
+      padding: calc(60 / 16 * 1rem) clamp(1rem, 3.2vw, 2rem) 0;
       /* 32px - 40px */
       padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
       background: #fff;
       box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-      border-radius: (4/16rem);
+      border-radius: calc(4 / 16 * 1rem);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -598,23 +598,23 @@
     }
 
     .item-img {
-      width: (80/16rem);
-      height: (80/16rem);
+      width: calc(80 / 16 * 1rem);
+      height: calc(80 / 16 * 1rem);
       position: absolute;
       top: (-40/16rem);
     }
 
     .item-p {
-      font-size: (16/16rem);
+      font-size: calc(16 / 16 * 1rem);
       line-height: 1.5em;
-      margin: 0 0 (20/16rem);
-      padding-bottom: (20/16rem);
+      margin: 0 0 calc(20 / 16 * 1rem);
+      padding-bottom: calc(20 / 16 * 1rem);
       color: var(--bodyTextColor);
       border-bottom: 1px solid #e8e9ec;
     }
 
     .reviewer {
-      font-size: (16/16rem);
+      font-size: calc(16 / 16 * 1rem);
       font-weight: 700;
       line-height: 1.5em;
       width: 40%;
@@ -624,15 +624,15 @@
     }
 
     .desc {
-      font-size: (14/16rem);
+      font-size: calc(14 / 16 * 1rem);
       font-weight: 400;
-      color: var(#353535);
+      color: #353535;
       display: block;
     }
 
     .item-stars {
-      width: (96/16rem);
-      height: (16/16rem);
+      width: calc(96 / 16 * 1rem);
+      height: calc(16 / 16 * 1rem);
     }
   }
 }
@@ -644,7 +644,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: (16/16rem);
+      gap: calc(16 / 16 * 1rem);
     }
 
     .item {
