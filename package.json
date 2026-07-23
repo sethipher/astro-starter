@@ -39,9 +39,9 @@
 		"astro": "^7.1.0",
 		"astro-icon": "^1.1.5",
 		"autoprefixer": "^10.5.4",
-		"less": "^4.6.7",
 		"sharp": "^0.35.3",
-		"typescript": "^6.0.0"
+		"typescript": "^6.0.0",
+		"sass": "^1.89.2"
 	},
 	"devDependencies": {
 		"netlify-plugin-cache": "^1.0.3",

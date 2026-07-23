@@ -13,7 +13,7 @@ export default defineConfig({
   vite: {
     css: {
       preprocessorOptions: {
-        less: {}
+        sass: {}
       }
     }
   }
