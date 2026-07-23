@@ -10,4 +10,11 @@ export default defineConfig({
     icon(),
     sitemap(),
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        sass: {}
+      }
+    }
+  }
 });
