@@ -86,20 +86,20 @@ const currentYear = getCurrentYear();
   /* Mobile */
   @media only screen and (min-width: 0em) {
     #footer {
-      font-size: ~"min(4vw, 1.2em)";
-      padding: (84/16rem) 0 (20/16rem);
+      font-size: min(4vw, 1.2em);
+      padding: calc(84rem / 16) 0 calc(20rem / 16);
       background: #1c1c1c;
 
       .left-section {
         text-align: center;
         margin: auto;
-        margin-bottom: (50/16rem);
+        margin-bottom: calc(50rem / 16);
         .logo {
           text-align: center;
           width: auto;
-          height: (32/16em);
+          height: calc(32em / 16);
           margin: auto;
-          margin-bottom: (30/16em);
+          margin-bottom: calc(30em / 16);
           display: inline-block;
 
           img {
@@ -110,11 +110,11 @@ const currentYear = getCurrentYear();
         }
 
         p {
-          font-size: (14/16rem);
-          line-height: 27/14;
+          font-size: calc(14rem / 16);
+          line-height: calc(27 / 14);
           text-align: center;
           width: 100%;
-          width: 307/14rem;
+          width: calc(307rem / 14);
           margin: auto;
           color: #fff;
           opacity: 0.9;
@@ -123,11 +123,11 @@ const currentYear = getCurrentYear();
 
       .right-section {
         width: 96%;
-        max-width: (407/16rem);
+        max-width: calc(407rem / 16);
         margin: auto;
         .lists {
           width: 96%;
-          max-width: (307/16rem);
+          max-width: calc(307rem / 16);
           margin: auto;
           display: flex;
           justify-content: space-between;
@@ -138,9 +138,9 @@ const currentYear = getCurrentYear();
             padding: 0;
 
             &:nth-of-type(3) {
-              margin-top: (50/16rem);
+              margin-top: calc(50rem / 16);
               li {
-                margin-bottom: (16/16rem);
+                margin-bottom: calc(16rem / 16);
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -152,14 +152,14 @@ const currentYear = getCurrentYear();
             }
 
             li {
-              font-size: (18/16rem);
+              font-size: calc(18rem / 16);
               list-style: none;
-              margin-bottom: (12/16rem);
+              margin-bottom: calc(12rem / 16);
               color: #fff;
               opacity: 0.9;
 
               a {
-                line-height: 21/18em;
+                line-height: calc(21em / 18);
                 text-decoration: none;
                 color: #fff;
                 transition: color 0.3s;
@@ -169,23 +169,23 @@ const currentYear = getCurrentYear();
               }
             }
             h2 {
-              font-size: (18/16rem);
+              font-size: calc(18rem / 16);
               font-weight: bold;
-              line-height: 21/18em;
+              line-height: calc(21em / 18);
               text-transform: uppercase;
-              margin-bottom: (37/16rem);
+              margin-bottom: calc(37rem / 16);
               color: #fff;
               position: relative;
 
               &:before {
                 content: "";
-                width: (97/16rem);
-                height: (2/16rem);
+                width: calc(97rem / 16);
+                height: calc(2rem / 16);
                 background: var(--primary);
                 opacity: 1;
                 display: block;
                 position: absolute;
-                bottom: (-16/16rem);
+                bottom: calc(-16rem / 16);
                 left: 0;
               }
             }
@@ -198,24 +198,24 @@ const currentYear = getCurrentYear();
         }
 
         .button-solid {
-          width: (250/16rem);
-          height: (53/16rem);
+          width: calc(250rem / 16);
+          height: calc(53rem / 16);
           margin: 0;
-          padding-top: (3/16rem);
+          padding-top: calc(3rem / 16);
         }
       }
 
       .credit {
-        font-size: (16/16rem);
-        line-height: (36/16rem);
+        font-size: calc(16rem / 16);
+        line-height: calc(36rem / 16);
         text-align: center;
         width: 96%;
         margin: auto;
-        margin-top: (100/16rem);
+        margin-top: calc(100rem / 16);
         color: #fff;
 
         a {
-          font-size: (16/16rem);
+          font-size: calc(16rem / 16);
           text-decoration: none;
           color: var(--primary);
 
@@ -225,7 +225,7 @@ const currentYear = getCurrentYear();
         }
 
         .copyright {
-          font-size: (16/16rem);
+          font-size: calc(16rem / 16);
           display: block;
         }
       }
@@ -235,10 +235,10 @@ const currentYear = getCurrentYear();
   /* Small Desktop */
   @media only screen and (min-width: 64em) {
     #footer {
-      font-size: ~"min(1.2vw, 1em)";
+      font-size: min(1.2vw, 1em);
       .container {
         width: 96%;
-        max-width: (1320/16rem);
+        max-width: calc(1320rem / 16);
         margin: auto;
         padding: 0;
         display: flex;
@@ -249,12 +249,12 @@ const currentYear = getCurrentYear();
 
       .left-section {
         text-align: left;
-        width: (409/16rem);
+        width: calc(409rem / 16);
         margin: 0;
 
         .logo {
           text-align: left;
-          height: (40/16rem);
+          height: calc(40rem / 16);
           margin-left: 0;
         }
 
@@ -265,12 +265,12 @@ const currentYear = getCurrentYear();
       }
 
       .right-section {
-        width: (609/16rem);
+        width: calc(609rem / 16);
         max-width: none;
         margin: 0;
         .lists {
           width: 96%;
-          max-width: (769/16rem);
+          max-width: calc(769rem / 16);
           max-width: initial;
           margin: 0;
 
@@ -290,12 +290,12 @@ const currentYear = getCurrentYear();
                 &:before {
                   content: "";
                   width: 0%;
-                  height: (2/16rem);
+                  height: calc(2rem / 16);
                   background: var(--primary);
                   opacity: 1;
                   display: block;
                   position: absolute;
-                  bottom: (-3/16rem);
+                  bottom: calc(-3rem / 16);
                   left: 0;
                   transition: width 0.3s;
                 }

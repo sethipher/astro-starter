@@ -31,7 +31,7 @@ const { links } = Astro.props;
 <style lang="scss">
   .breadcrumbs {
     position: relative;
-    margin-top: (16/16rem);
+    margin-top: calc(16/16 * 1rem);
 
     ul {
       font-size: 0; // Removes whitespace between inline-block elements
@@ -52,9 +52,9 @@ const { links } = Astro.props;
     a {
       padding: 0.2rem 0; // Better touch support
       text-decoration: none; // Remove underline
-      font-size: (20/16rem);
+      font-size: calc(20/16 * 1rem);
       color: #fff;
-      margin-right: (32/16rem);
+      margin-right: calc(32/16 * 1rem);
 
       &:last-child {
         margin-right: 0;
@@ -64,7 +64,7 @@ const { links } = Astro.props;
     span {
       cursor: default; // Prevent mouse change
       margin-left: 0;
-      font-size: (20/16rem);
+      font-size: calc(20/16 * 1rem);
       color: var(--primary);
     }
   }

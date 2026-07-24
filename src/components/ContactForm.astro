@@ -98,32 +98,32 @@ const {
 
       .container {
         width: 100%;
-        max-width: (800/16rem);
+        max-width: calc(800/16 * 1rem);
         margin: auto;
       }
 
       .content {
         text-align: center;
-        margin-bottom: (48/16rem);
+        margin-bottom: calc(48/16 * 1rem);
       }
 
       .topper {
-        margin-bottom: (16/16rem);
+        margin-bottom: calc(16/16 * 1rem);
       }
 
       .title {
-        margin-bottom: (16/16rem);
+        margin-bottom: calc(16/16 * 1rem);
       }
 
       .text {
-        max-width: (600/16rem);
+        max-width: calc(600/16 * 1rem);
         margin: 0 auto;
       }
 
       .contact-form {
         display: grid;
         grid-template-columns: 1fr;
-        gap: (24/16rem);
+        gap: calc(24/16 * 1rem);
       }
 
       .form-group {
@@ -136,17 +136,17 @@ const {
 
         label {
           font-weight: 600;
-          margin-bottom: (8/16rem);
+          margin-bottom: calc(8/16 * 1rem);
           color: var(--headerColor);
         }
 
         input,
         select,
         textarea {
-          padding: (16/16rem);
+          padding: calc(16/16 * 1rem);
           border: 2px solid #e1e5e9;
-          border-radius: (8/16rem);
-          font-size: (16/16rem);
+          border-radius: calc(8/16 * 1rem);
+          font-size: calc(16/16 * 1rem);
           font-family: inherit;
           transition:
             border-color 0.3s ease,
@@ -165,7 +165,7 @@ const {
 
         textarea {
           resize: vertical;
-          min-height: (120/16rem);
+          min-height: calc(120/16 * 1rem);
         }
 
         select {
@@ -176,11 +176,11 @@ const {
       .button-solid {
         display: inline-flex;
         align-items: center;
-        gap: (8/16rem);
+        gap: calc(8/16 * 1rem);
         justify-content: center;
         width: 100%;
-        padding: (16/16rem) (32/16rem);
-        font-size: (16/16rem);
+        padding: calc(16/16 * 1rem) calc(32/16 * 1rem);
+        font-size: calc(16/16 * 1rem);
         font-weight: 600;
         border: none;
         cursor: pointer;
@@ -207,7 +207,7 @@ const {
     .contact-form-section {
       .contact-form {
         grid-template-columns: repeat(2, 1fr);
-        gap: (32/16rem) (24/16rem);
+        gap: calc(32/16 * 1rem) calc(24/16 * 1rem);
       }
     }
   }
@@ -216,7 +216,7 @@ const {
   @media only screen and (min-width: 64em) {
     .contact-form-section {
       .container {
-        max-width: (900/16rem);
+        max-width: calc(900/16 * 1rem);
       }
     }
   }

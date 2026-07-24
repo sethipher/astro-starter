@@ -13,8 +13,8 @@ const optimizedHeroImg = await getImage({ src: heroImg, format: "avif" });
 
 // 1. Import critical styles directly. Astro will bundle and inject these
 // as a blocking <link> tag in the <head>, which is exactly what you want
-import "@styles/critical.less";
-import localStyles_URL from "@styles/local.less?url";
+import "@styles/critical.scss";
+import localStyles_URL from "@styles/local.scss?url";
 import { Icon } from "astro-icon/components";
 ---
 

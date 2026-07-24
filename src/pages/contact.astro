@@ -169,7 +169,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
       .container {
         width: 100%;
         /* changes to 1280px at tablet */
-        max-width: (584/16rem);
+        max-width: calc(584/16 * 1rem);
         margin: auto;
         display: flex;
         justify-content: center;
@@ -178,7 +178,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
         column-gap: auto;
         /* 48px - 64px */
         row-gap: clamp(2rem, 3vw, 3rem);
-        column-gap: (20/16rem);
+        column-gap: calc(20/16 * 1rem);
         position: relative;
       }
 
@@ -203,19 +203,19 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
 
       .contact-group {
         width: 100%;
-        max-width: (650/16rem);
-        min-height: (500/16rem);
+        max-width: calc(650/16 * 1rem);
+        min-height: calc(500/16 * 1rem);
         /* 24px - 32px */
         padding: clamp(1.5rem, 2.5vw, 2rem);
-        padding-top: (150/16rem);
+        padding-top: calc(150/16 * 1rem);
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        border-radius: (24/16rem);
+        border-radius: calc(24/16 * 1rem);
         overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        gap: (32/16rem);
+        gap: calc(32/16 * 1rem);
         /* sends it to the bottom in the 3rd position */
         order: 3;
         position: relative;
@@ -231,7 +231,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        gap: (24/16rem);
+        gap: calc(24/16 * 1rem);
         position: relative;
       }
 
@@ -240,7 +240,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: (20/16rem);
+        gap: calc(20/16 * 1rem);
 
         &:hover {
           .icon-wrapper {
@@ -250,16 +250,16 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
       }
 
       .header {
-        font-size: (20/16rem);
+        font-size: calc(20/16 * 1rem);
         font-weight: 700;
         line-height: 1.2em;
-        margin-bottom: (12/16rem);
+        margin-bottom: calc(12/16 * 1rem);
         color: var(--bodyTextColorWhite);
         display: block;
       }
 
       .link {
-        font-size: (16/16rem);
+        font-size: calc(16/16 * 1rem);
         line-height: 1.5em;
         text-decoration: none;
         color: var(--bodyTextColorWhite);
@@ -273,8 +273,8 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
       }
 
       .icon-wrapper {
-        width: (60/16rem);
-        height: (60/16rem);
+        width: calc(60/16 * 1rem);
+        height: calc(60/16 * 1rem);
         margin: 0;
         border-radius: 50%;
         border: 1px solid var(--secondary);
@@ -287,7 +287,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
       }
 
       .icon {
-        width: (24/16rem);
+        width: calc(24/16 * 1rem);
         height: auto;
         display: block;
       }
@@ -331,19 +331,19 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
 
       .form {
         width: 100%;
-        max-width: (630/16rem);
+        max-width: calc(630/16 * 1rem);
         /* 24px - 48px top and bottom */
         /* 16px - 48px left and right */
         padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
         /* prevents flexbox from affecting height and width */
         box-sizing: border-box;
         background-color: #fff;
-        border-radius: (24/16rem);
+        border-radius: calc(24/16 * 1rem);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        gap: (12/16rem);
+        gap: calc(12/16 * 1rem);
       }
 
       .label {
@@ -355,18 +355,18 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: (4/16rem);
+        gap: calc(4/16 * 1rem);
       }
 
       .input {
-        font-size: (16/16rem);
+        font-size: calc(16/16 * 1rem);
         width: 100%;
-        height: (56/16rem);
+        height: calc(56/16 * 1rem);
         padding: 0;
-        padding-left: (24/16rem);
+        padding-left: calc(24/16 * 1rem);
         color: var(--headerColor);
         background-color: #f7f7f7;
-        border-radius: (8/16rem);
+        border-radius: calc(8/16 * 1rem);
         border: none;
         /* prevents padding from adding to height and width */
         box-sizing: border-box;
@@ -377,22 +377,22 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
       }
 
       .textarea {
-        min-height: (120/16rem);
-        padding-top: (24/16rem);
-        margin-bottom: (12/16rem);
+        min-height: calc(120/16 * 1rem);
+        padding-top: calc(24/16 * 1rem);
+        margin-bottom: calc(12/16 * 1rem);
         font-family: inherit;
       }
 
       .button-solid {
-        font-size: (16/16rem);
-        line-height: (56/16rem);
+        font-size: calc(16/16 * 1rem);
+        line-height: calc(56/16 * 1rem);
         text-decoration: none;
         font-weight: 700;
         overflow: hidden;
         margin: 0;
         color: #fff;
-        padding: 0 (48/16rem);
-        border-radius: (8/16rem);
+        padding: 0 calc(48/16 * 1rem);
+        border-radius: calc(8/16 * 1rem);
         background-color: var(--primary);
         display: inline-block;
         position: relative;
@@ -423,7 +423,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
 
       .submit {
         width: 100%;
-        min-width: (200/16rem);
+        min-width: calc(200/16 * 1rem);
         border: none;
 
         &:hover {
@@ -438,7 +438,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
   @media only screen and (min-width: 48rem) {
     #contact-1441 {
       .container {
-        max-width: (1280/16rem);
+        max-width: calc(1280/16 * 1rem);
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -457,7 +457,7 @@ const optimizedImage = await getImage({ src: BannerImage, format: "avif" });
 
       .form {
         width: 45%;
-        max-width: (542/16rem);
+        max-width: calc(542/16 * 1rem);
         order: 3;
       }
 
